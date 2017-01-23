@@ -1,0 +1,231 @@
+
+
+$color: #ed1c23//#d82020 //Theme skin
+$color_dark: #cc1e1e
+$text_color: #888
+$grey-text: #7c7c7c
+$main_color: #222
+$bg_light: #FAFAFA
+$slide_caption: #fff
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: $color
+
+p
+	color: $text_color
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	color: $main_color
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+//=============Header section===================
+.name
+	color: $color
+	+kerning(3)
+.descr
+	color: $grey-text
+	font-size: 1.2em
+.main-header
+	background-color: rgba(0,0,0,.7)
+	a
+		color: $bg_light
+.social
+	a
+		color: $text_color
+	i:hover
+		color: $color
+.phone
+	color: $color
+	.fa
+		color: $text_color
+.slash
+	color: rgba($text_color, .6)
+.nav
+	li
+		a
+			transition: all .3s ease-in-out
+			&:hover
+				text-decoration: none
+				background-color: $color
+//=============Slider section===================
+.main-color
+	color: $color
+.slide
+	h1
+		color: $slide_caption
+	p
+		font-family: 'Fira Sans Extra Condensed', sans-serif
+		color: $slide_caption
+		font-weight: 400
+.slider
+	// background-color: rgba($main_color,.4)
+.button
+	background-color: $color_dark
+	color: $bg_light
+	&:hover,
+	&:focus
+		color: $slide_caption
+		background-color: $color
+.button-more
+	background-color: #f3f3f3
+	color: $text_color
+	border: 1px solid #eaeceb
+	&:hover,
+	&:focus
+		color: $color
+		border-color: $color_dark
+		text-decoration: none
+		
+.sub-cat
+	color: $slide_caption
+	background-color: $color
+	text-decoration: none
+	&:hover,
+	&:focus
+		color: $slide_caption
+		background-color: $color_dark
+		text-decoration: none
+.button-read
+	&:hover,
+	&:focus
+		color: $color_dark
+
+//=============s_about section===================
+.s_about
+	background-color: $bg_light
+	p
+		color: $main_color
+.person-caption
+	background-color: rgba(0,0,0,.6)
+	h3,
+	p
+		color: $bg_light
+.personal-soc
+	a
+		color: $slide_caption
+		&:hover
+			color: $color
+//===============STUFF ====================
+.s_stuff
+	background-color: rgba(0,0,0,.6)
+	.s_caption
+		h2
+			color: $bg_light
+			line-height: 1
+	border: 1px solid $grey-text
+	background-color: $bg_light
+.gray-color
+	color: $text_color
+//================== subscription =============
+.subscription-item
+	// box-shadow: 2px 2px 3px 1px gray
+	box-shadow: 0px 0px 3px 2px $grey-text
+	&:hover
+		box-shadow: 0px 0px 3px 2px $grey-text, 2px 2px 3px 1px $color
+//================== contacts =============
+.s_contacts
+	background-color: $bg_light
+.contact-box
+	i
+		color: $color
+.get-in-toch
+	color: $slide_caption
+.dark-bg
+	background-color: #1f1f1f
+//==============get-in-toch-form ============
+.get-in-toch-form
+	input,
+	textarea
+		background-color: transparent
+		border: none
+		border-bottom: 1px solid #FFF 
+	.submit
+		color: #fff
+		border: 1px solid #fff
+		background-color: transparent
+		&:hover
+			color: #7878fb
+			border: 1px solid #7878fb
+//===============Shop featured section======
+.shop-item
+	.price
+		p
+			color: #000
+	a.add-cart
+		color: #888
+		border: 1px solid #eaeceb
+		&:hover
+			text-decoration: none
+			color: #000
+.prev,
+.next
+	a
+		color: $text_color
+		&:hover
+			color: $color
+
+//===============BMI section=++++++++++++=====
+.s_bmi
+	// background: url(../img/bmi.jpg) center center no-repeat, rgba($color,.6)
+	background-color: rgba($color,.6)
+	.s_caption
+		h2
+			color: $slide_caption
+		a
+			color: $slide_caption
+			text-decoration: none
+			transition: all .5s ease
+			&:hover
+				color: $main-color
+				letter-spacing: 4px
+	select,
+	input,
+		border: 1px solid #fff
+		background-color: transparent
+		color: #fff
+	select
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		option
+			background-color: $color
+			color: $slide_caption
+			&:hover
+				background-color: #fff
+			&:focus,
+			&:active
+				background-color: #fff
+	button
+		background-color: #1f1f1f
+		border: 1px solid #1f1f1f
+		color: #fff
+
+.result,
+#result
+	color: #fff
+
+//========FOOTER =======================
+.main-footer
+	background-color: #1f1f1f
+	color: $text_color
+	a
+		color: $text_color
+	h2,
+	h3
+		color: $slide_caption
+
