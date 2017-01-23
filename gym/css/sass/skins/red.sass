@@ -127,12 +127,13 @@ h6
 		h2
 			color: $bg_light
 			line-height: 1
-	border: 1px solid $grey-text
-	background-color: $bg_light
+
 .gray-color
 	color: $text_color
 //================== subscription =============
 .subscription-item
+	border: 1px solid $grey-text
+	background-color: $bg_light
 	// box-shadow: 2px 2px 3px 1px gray
 	box-shadow: 0px 0px 3px 2px $grey-text
 	&:hover
@@ -163,6 +164,10 @@ h6
 			border: 1px solid #7878fb
 //===============Shop featured section======
 .shop-item
+	background-color: #fff
+	&:hover
+		box-shadow: 0px 0px 3px 2px $grey-text, 2px 2px 3px 1px $color
+		top: -8px
 	.price
 		p
 			color: #000
@@ -178,7 +183,13 @@ h6
 		color: $text_color
 		&:hover
 			color: $color
-
+			text-shadow: 1px 1px 5px $grey-text
+.inactive
+	a
+		color: #eaeceb
+		&:hover
+			text-shadow: none
+			color: #eaeceb
 //===============BMI section=++++++++++++=====
 .s_bmi
 	// background: url(../img/bmi.jpg) center center no-repeat, rgba($color,.6)

@@ -112,9 +112,7 @@ h6 {
     color: #ed1c23; }
 
 .s_stuff {
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 1px solid #7c7c7c;
-  background-color: #FAFAFA; }
+  background-color: rgba(0, 0, 0, 0.6); }
   .s_stuff .s_caption h2 {
     color: #FAFAFA;
     line-height: 1; }
@@ -123,6 +121,8 @@ h6 {
   color: #888; }
 
 .subscription-item {
+  border: 1px solid #7c7c7c;
+  background-color: #FAFAFA;
   box-shadow: 0px 0px 3px 2px #7c7c7c; }
   .subscription-item:hover {
     box-shadow: 0px 0px 3px 2px #7c7c7c, 2px 2px 3px 1px #ed1c23; }
@@ -152,21 +152,33 @@ h6 {
     color: #7878fb;
     border: 1px solid #7878fb; }
 
-.shop-item .price p {
-  color: #000; }
-.shop-item a.add-cart {
-  color: #888;
-  border: 1px solid #eaeceb; }
-  .shop-item a.add-cart:hover {
-    text-decoration: none;
+.shop-item {
+  background-color: #fff; }
+  .shop-item:hover {
+    box-shadow: 0px 0px 3px 2px #7c7c7c, 2px 2px 3px 1px #ed1c23;
+    top: -8px; }
+  .shop-item .price p {
     color: #000; }
+  .shop-item a.add-cart {
+    color: #888;
+    border: 1px solid #eaeceb; }
+    .shop-item a.add-cart:hover {
+      text-decoration: none;
+      color: #000; }
 
 .prev a,
 .next a {
   color: #888; }
   .prev a:hover,
   .next a:hover {
-    color: #ed1c23; }
+    color: #ed1c23;
+    text-shadow: 1px 1px 5px #7c7c7c; }
+
+.inactive a {
+  color: #eaeceb; }
+  .inactive a:hover {
+    text-shadow: none;
+    color: #eaeceb; }
 
 .s_bmi {
   background-color: rgba(237, 28, 35, 0.6); }

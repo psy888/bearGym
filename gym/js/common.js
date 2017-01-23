@@ -65,12 +65,44 @@ $(document).ready(function() {
 		}
 		var bmi = w / Math.pow(h, 2);
 		if (bmi){
-		$('#result').html(bmi.toFixed(1));
-	}else{
-		return;
-	}
+			$('#result').html(bmi.toFixed(1));
+		}else{
+			return;
+		}
 	});
-	
+
+	var products = $('.shop-item');
+	var n = 4 //items per page
+	if (products.length > 4){
+		for (var i = n ; products.length > i; i++) {
+			console.log(products[i]);
+			$(products[i]).parent().toggleClass('hidden');
+		}
+	};
+	$('.next').click(function (event) {
+		event.preventDefault();
+		if ($(products[n]).parent().hasClass('hidden')){
+			$(products[n-4]).parent().toggleClass('hidden');
+			$(products[n]).parent().toggleClass('hidden');
+			if(!$(products[n+1]).parent().hasClass('hidden')){
+				$('.next').addClass('inactive');
+			}
+			$('.prev').removeClass('inactive');
+			++n;
+		}
+	});
+		$('.prev').click(function (event) {
+		event.preventDefault();
+		if ($(products[n-5]).parent().hasClass('hidden')){
+			$(products[n-5]).parent().toggleClass('hidden');
+			$(products[n-1]).parent().toggleClass('hidden');
+			if(!$(products[n-6]).parent().hasClass('hidden')){
+				$('.prev').addClass('inactive');
+			}
+			$('.next').removeClass('inactive');
+			--n;
+		}
+	});
 	
 	
 });

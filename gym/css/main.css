@@ -401,12 +401,10 @@ section {
 
 .subscription-item {
   position: relative;
-  box-shadow: 0px 0px 3px 2px gray;
   min-height: 400px;
   margin-bottom: 25px;
   transition: top 1s ease; }
   .subscription-item:hover {
-    box-shadow: 0px 2px 5px 4px gray;
     top: -8px; }
   .subscription-item img {
     width: 100%;
@@ -514,7 +512,8 @@ textarea[name='message'] {
     background: none; }
 
 .shop-item {
-  background-color: #fff;
+  position: relative;
+  transition: top 1s ease;
   padding: 10px 5px 20px;
   text-align: center; }
   .shop-item img {
