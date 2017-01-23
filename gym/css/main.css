@@ -394,6 +394,9 @@ section {
     font-size: 0.7em;
     margin: 0 5px; }
 
+.s_subscription {
+  position: relative; }
+
 .sub_caption {
   text-align: center;
   margin-bottom: 25px;
