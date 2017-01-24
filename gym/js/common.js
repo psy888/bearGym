@@ -17,13 +17,7 @@ $(document).ready(function() {
 		heightDetect();
 	});
 	
-
-	// 	imageSrc: "img/hero2.jpg"
-	// });
-	//parallax();
-	
-	
-
+	//TOP MENU + Mobile menu
 	var menu = function (event) {
 		event.preventDefault();
 		$('.sandwich').toggleClass('active');
@@ -71,94 +65,57 @@ $(document).ready(function() {
 		}
 	});
 // next prev slider
-	var products = $('.shop-item');
-	var subscription = $('.subscription-item');
-	var n = 4; //items per page
-	var m = 4; 
 	
-	hideRest(products, 4);
-	hideRest(subscription, 4);
-
-	$('.p-next').click(function(event){
-		event.preventDefault();
-		if ($(products[n]).parent().hasClass('hidden')){
-			$(products[n-4]).parent().toggleClass('hidden');
-			$(products[n]).parent().toggleClass('hidden');
-			if(!$(products[n+1]).parent().hasClass('hidden')){
-				$(this).addClass('inactive');
-			}
-			$(this).siblings('.prev').removeClass('inactive');
-			++n;
-		}
-	});
-	$('.p-prev').click(function (event) {
-		event.preventDefault();
-		if ($(products[n-5]).parent().hasClass('hidden')){
-			$(products[n-5]).parent().toggleClass('hidden');
-			$(products[n-1]).parent().toggleClass('hidden');
-			if(!$(products[n-6]).parent().hasClass('hidden')){
-				$(this).addClass('inactive');
-			}
-			$(this).siblings('.next').removeClass('inactive');
-			--n;
-		}
-	});
-	$('.s-next').click(function(event){
-		event.preventDefault();
-		if ($(subscription[m]).parent().hasClass('hidden')){
-			$(subscription[m-4]).parent().toggleClass('hidden');
-			$(subscription[m]).parent().toggleClass('hidden');
-			if(!$(subscription[m+1]).parent().hasClass('hidden')){
-				$(this).addClass('inactive');
-			}
-			$(this).siblings('.prev').removeClass('inactive');
-			++m;
-		}
-	});
-	$('.s-prev').click(function (event) {
-		event.preventDefault();
-		if ($(subscription[m-5]).parent().hasClass('hidden')){
-			$(subscription[m-5]).parent().toggleClass('hidden');
-			$(subscription[m-1]).parent().toggleClass('hidden');
-			if(!$(subscription[m-6]).parent().hasClass('hidden')){
-				$(this).addClass('inactive');
-			}
-			$(this).siblings('.next').removeClass('inactive');
-			--m;
-		}
-	});
-	function hideRest(sel,q){
-		if (sel.length > q){
+slide($('.shop-item'), 4);
+slide($('.subscription-item'),4);
+//slider func
+function slide (sel, q){
+	if ($(window).width() < 480){
+		q = q/4;
+		$(sel).parent().toggleClass('col-xs-6');
+	}else if($(window).width() <= 745 ){
+		q = q/2;
+	}else if ($(window).width() <= 973 ) {
+		q = 3;
+	}
+	var n = q;
+	var next = $(sel).parent().siblings('.next');
+	var prev = $(sel).parent().siblings('.prev');
+	//HIDE REST ELEMENTS
+	if (sel.length > q){
 			for (var i = q ; sel.length > i; i++) {
 				$(sel[i]).parent().toggleClass('hidden');
 			}
-		}else{
-			// console.log($(sel).parent().siblings());
-			$(sel[0]).parent().siblings('.next').addClass('hidden');
-			$(sel[0]).parent().siblings('.prev').addClass('hidden');
-		}
-	};
+	}else{
+			$(next).addClass('hidden');
+			$(prev).addClass('hidden');
+	}
 	
-	function nextClick(sel){
+	//NEXT CLICK HANDLER
+	$(next).click(function (event) {
+		event.preventDefault();
 		if ($(sel[n]).parent().hasClass('hidden')){
-			$(sel[n-4]).parent().toggleClass('hidden');
+			$(sel[n-q]).parent().toggleClass('hidden');
 			$(sel[n]).parent().toggleClass('hidden');
 			if(!$(sel[n+1]).parent().hasClass('hidden')){
-				$(scope).addClass('inactive');
+				$(next).addClass('inactive');
 			}
-			$(scope).siblings('.prev').removeClass('inactive');
+			$(prev).removeClass('inactive');
 			++n;
 		}
-	}
-	function prevClick(sel){
-		if ($(sel[n-5]).parent().hasClass('hidden')){
-			$(sel[n-5]).parent().toggleClass('hidden');
+	});
+	//PREV CLICK HANDLER
+	$(prev).click(function(event) {
+		event.preventDefault();
+		if ($(sel[n-q-1]).parent().hasClass('hidden')){
+			$(sel[n-q-1]).parent().toggleClass('hidden');
 			$(sel[n-1]).parent().toggleClass('hidden');
-			if(!$(sel[n-6]).parent().hasClass('hidden')){
-				$(scope).addClass('inactive');
+			if(!$(sel[n-q-2]).parent().hasClass('hidden')){
+				$(prev).addClass('inactive');
 			}
-			$(scope).siblings('.next').removeClass('inactive');
+			$(next).removeClass('inactive');
 			--n;
 		}
-	}
+	});
+}
 });
