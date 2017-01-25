@@ -224,5 +224,10 @@ h6 {
   .main-footer h2,
   .main-footer h3 {
     color: #fff; }
+  .main-footer .contact-box h4 {
+    color: #888; }
+
+.footer-menu a:hover {
+  color: #fff; }
 
 /*# sourceMappingURL=red.css.map */

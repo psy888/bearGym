@@ -43,24 +43,38 @@
 .workout-list-item .img{
 	margin-bottom: 15px;
 }
+.contact-box{
+	float: left;
+	margin-left: 5%;
+}
+.s_contacts img {
+	display: none;
+}
+.dark-bg{
+	padding-left: 15px;
+	padding-bottom: 45px;
+}
+.get-in-toch form{
+	padding-left: 9%;
+}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-/*.brand{
-	text-align: center;
-    margin: 0 auto;
-}*/
-/*.nav-wrap, .contacts {
-    float: none;
-    text-align: center;
-}*/
-/*.email,
-.contacts .slash{
-	display: none;
-}*/
+
 .slide-text h1{
 	font-size: 6em;
+}
+.s_contacts h3,
+.contact-box {
+	text-align: center;
+}
+.contact-box{
+	float: none;
+	margin-left: 0;
+}
+.s_contacts img {
+	display: none;
 }
 }
 

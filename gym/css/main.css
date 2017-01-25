@@ -580,4 +580,38 @@ textarea[name='message'] {
   margin: 0 0 0 20px;
   vertical-align: middle; }
 
+.main-footer {
+  padding: 45px 0 35px;
+  margin: 0; }
+  .main-footer p {
+    font-size: 0.9em; }
+  .main-footer h3 {
+    letter-spacing: 3px;
+    font-size: 1.5em;
+    margin-top: 0; }
+  .main-footer .brand-logo img {
+    width: 45px;
+    height: 45px; }
+  .main-footer .brand-caption {
+    font-size: 1.1em; }
+  .main-footer .contact-box {
+    margin-bottom: 10px; }
+    .main-footer .contact-box i {
+      margin: 0 0 5px 7px; }
+    .main-footer .contact-box h4 {
+      display: none; }
+
+.footer-menu ul,
+.footer-menu li,
+.footer-menu a {
+  display: block; }
+.footer-menu a {
+  text-transform: lowercase; }
+
+.partners img {
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out; }
+  .partners img:hover {
+    filter: none; }
+
 /*# sourceMappingURL=main.css.map */
