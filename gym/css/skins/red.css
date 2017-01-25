@@ -155,8 +155,7 @@ h6 {
 .shop-item {
   background-color: #fff; }
   .shop-item:hover {
-    box-shadow: 0px 0px 3px 2px #7c7c7c, 2px 2px 3px 1px #ed1c23;
-    top: -8px; }
+    box-shadow: 0px 0px 3px 2px #7c7c7c, 2px 2px 3px 1px #ed1c23; }
   .shop-item .price p {
     color: #000; }
   .shop-item a.add-cart {

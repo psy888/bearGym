@@ -170,6 +170,9 @@ section {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.9); }
 
+.dispblock {
+  display: block !important; }
+
 .sandwich {
   width: 40px;
   height: 40px;
@@ -406,9 +409,9 @@ section {
   position: relative;
   min-height: 400px;
   margin-bottom: 25px;
-  transition: top 1s ease; }
+  transition: all 0.3s ease-in-out; }
   .subscription-item:hover {
-    top: -8px; }
+    transform: scale(1.1); }
   .subscription-item img {
     width: 100%;
     height: auto;
@@ -442,13 +445,15 @@ section {
   font-size: 0.7em;
   font-weight: 600; }
 
-.s_contacts h3 {
-  font-size: 2em;
-  text-decoration: underline;
-  letter-spacing: 3px; }
-.s_contacts img {
-  width: 100%;
-  height: auto; }
+.s_contacts {
+  padding-bottom: 0; }
+  .s_contacts h3 {
+    font-size: 2em;
+    text-decoration: underline;
+    letter-spacing: 3px; }
+  .s_contacts img {
+    width: 100%;
+    height: auto; }
 
 .contact-box {
   margin-bottom: 25px; }
@@ -518,7 +523,10 @@ textarea[name='message'] {
   position: relative;
   transition: top 1s ease;
   padding: 10px 5px 20px;
-  text-align: center; }
+  text-align: center;
+  transition: all 0.3s ease-in-out; }
+  .shop-item:hover {
+    transform: scale(1.1); }
   .shop-item img {
     max-width: 100%;
     height: auto;

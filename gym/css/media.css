@@ -57,6 +57,9 @@
 .get-in-toch form{
 	padding-left: 9%;
 }
+.s_shop .s_caption h2{
+	line-height: 1;
+}
 }
 
 /* Small Devices, Tablets */
@@ -76,6 +79,10 @@
 .s_contacts img {
 	display: none;
 }
+.s_shop .s_caption h2{
+	font-size: 1em;
+	line-height: 1.2;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -88,6 +95,9 @@
 }
 .nav-wrap .mob-menu .nav{
 	margin-top: 22%
+}
+.s_stuff p{
+	font-size: .7em; 
 }
 }
 

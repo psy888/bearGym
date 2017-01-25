@@ -156,6 +156,8 @@ $h: 3px
 	border: none
 	z-index: 2
 	background-color: rgba(0,0,0,.9)
+.dispblock
+	display: block !important
 .sandwich
 	width: $w
 	height: $w
@@ -395,9 +397,10 @@ $h: 3px
 	// box-shadow: 2px 2px 3px 1px gray
 	min-height: 400px
 	margin-bottom: 25px
-	transition: top 1s ease
+	transition: all .3s ease-in-out
 	&:hover
-		top: -8px
+		transform: scale(1.1)
+		// top: -8px
 	img
 		width: 100%
 		height: auto
@@ -437,6 +440,7 @@ $h: 3px
 	font-weight: 600
 //=============== Contacts sections =================
 .s_contacts
+	padding-bottom: 0
 	h3
 		font-size: 2em
 		text-decoration: underline
@@ -508,6 +512,9 @@ textarea[name='message']
 	transition: top 1s ease
 	padding: 10px 5px 20px
 	text-align: center
+	transition: all 0.3s ease-in-out
+	&:hover
+		transform: scale(1.1)
 	img
 		max-width: 100%
 		height: auto

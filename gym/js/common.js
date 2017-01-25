@@ -7,6 +7,8 @@ $(document).ready(function() {
 	$('.s_stuff').parallax();
 	$('.s_bmi').parallax();
 
+	$("a[href*='#']").mPageScroll2id();
+
 	function heightDetect(){
 		$('.hero').css('height', $(window).height());
 		// $('.main-header').css('margin-bottom', '-'+($('.main-header').height()));
@@ -32,6 +34,13 @@ $(document).ready(function() {
 	}
 	$('.toggle-menu').click(menu);
 	
+	$( window ).scroll(function(){
+		if($('body').scrollTop() > 100){
+			$('.toggle-menu').addClass('dispblock');
+		}else{
+			$('.toggle-menu').removeClass('dispblock');
+	}
+	});
 	
 	$('.top-menu').click(function(event) {
 		if($('.sandwich').hasClass('active')){
@@ -118,4 +127,5 @@ function slide (sel, q){
 		}
 	});
 }
+
 });
