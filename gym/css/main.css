@@ -555,22 +555,20 @@ textarea[name='message'] {
 .prev {
   left: 1%; }
 
-.s_bmi {
-  text-align: center; }
-  .s_bmi .s_caption {
-    background: none;
-    text-align: left; }
-  .s_bmi form {
-    display: inline; }
-  .s_bmi select,
-  .s_bmi input,
-  .s_bmi button {
-    font-size: 1.3em;
-    display: inline;
-    padding: 15px 20px;
-    margin: 0 10px; }
-  .s_bmi input {
-    width: 16%; }
+.s_bmi .s_caption {
+  background: none;
+  text-align: left; }
+.s_bmi form {
+  display: inline; }
+.s_bmi select,
+.s_bmi input,
+.s_bmi button {
+  font-size: 1.3em;
+  display: inline;
+  padding: 15px 20px;
+  margin: 0 10px; }
+.s_bmi input {
+  width: 20%; }
 
 .result {
   font-size: 6em;
@@ -581,6 +579,8 @@ textarea[name='message'] {
   font-weight: 300; }
 
 #result {
+  position: absolute;
+  top: 50%;
   font-weight: 600;
   font-size: 12em;
   line-height: 0;

@@ -58,7 +58,7 @@ $(document).ready(function() {
 	$('.calc').click(function(event){
 		event.preventDefault();
 		var h;
-		var gender = $('#gender').val();
+		// var gender = $('#gender').val();
 		var w = $('#weight').val();
 		var height = $('#height').val();
 		if(height > 60){
