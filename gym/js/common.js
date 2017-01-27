@@ -38,9 +38,9 @@ $(document).ready(function() {
 		}
 	}
 	$('.toggle-menu').click(menu);
-	
+	// console.log($('.toggle-menu').css('display') == 'block');
 	$( window ).scroll(function(){
-		if($('body').scrollTop() > 80){
+		if($('body').scrollTop() > 80 && !($('.toggle-menu').css('display') == 'block')){
 			$('.main-header').addClass('dispblock');
 		}else{
 			$('.main-header').removeClass('dispblock');

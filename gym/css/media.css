@@ -33,14 +33,14 @@
 	font-size: .8em;
 	color: #fff;
 }
-.workout-list-item .date p{
+.blog-list-item .date p{
 	text-align: left;
 	display: inline-block;
 }
-.workout-list-item .date p:first-child{
+.blog-list-item .date p:first-child{
 	padding-top: 0;
 }
-.workout-list-item .img{
+.blog-list-item .img{
 	margin-bottom: 15px;
 }
 .contact-box{
