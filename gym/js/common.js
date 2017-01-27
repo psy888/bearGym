@@ -128,4 +128,7 @@ function slide (sel, q){
 	});
 }
 
+	$("#bearGal").unitegallery({
+		tiles_type:"justified"
+	}); 
 });
