@@ -35,10 +35,10 @@ $(document).ready(function() {
 	$('.toggle-menu').click(menu);
 	
 	$( window ).scroll(function(){
-		if($('body').scrollTop() > 100){
-			$('.toggle-menu').addClass('dispblock');
+		if($('body').scrollTop() > 80){
+			$('.main-header').addClass('dispblock');
 		}else{
-			$('.toggle-menu').removeClass('dispblock');
+			$('.main-header').removeClass('dispblock');
 	}
 	});
 	

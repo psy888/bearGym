@@ -1,0 +1,232 @@
+body {
+  color: #222;
+  letter-spacing: 1px; }
+
+a {
+  color: #ed1c23; }
+
+p {
+  color: #888; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222; }
+
+.color_element {
+  color: #ed1c23; }
+
+.color_bg {
+  background-color: #ed1c23; }
+
+.color_border {
+  border-color: #ed1c23; }
+
+.name {
+  color: #ed1c23;
+  letter-spacing: 3px; }
+
+.descr {
+  color: #7c7c7c;
+  font-size: 1.2em; }
+
+.main-header {
+  background-color: rgba(0, 0, 0, 0.7); }
+  .main-header a {
+    color: #FAFAFA; }
+
+.social a {
+  color: #888; }
+.social i:hover {
+  color: #ed1c23; }
+
+.phone {
+  color: #ed1c23; }
+  .phone .fa {
+    color: #888; }
+
+.slash {
+  color: rgba(136, 136, 136, 0.6); }
+
+.nav li a {
+  transition: all 0.3s ease-in-out; }
+  .nav li a:hover {
+    text-decoration: none;
+    background-color: #ed1c23; }
+
+.main-color {
+  color: #ed1c23; }
+
+.slide h1 {
+  color: #fff; }
+.slide p {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  color: #fff;
+  font-weight: 400; }
+
+.button {
+  background-color: #cc1e1e;
+  color: #FAFAFA; }
+  .button:hover, .button:focus {
+    color: #fff;
+    background-color: #ed1c23; }
+
+.button-more {
+  background-color: #f3f3f3;
+  color: #888;
+  border: 1px solid #eaeceb; }
+  .button-more:hover, .button-more:focus {
+    color: #ed1c23;
+    border-color: #cc1e1e;
+    text-decoration: none; }
+
+.sub-cat {
+  color: #fff;
+  background-color: #ed1c23;
+  text-decoration: none; }
+  .sub-cat:hover, .sub-cat:focus {
+    color: #fff;
+    background-color: #cc1e1e;
+    text-decoration: none; }
+
+.button-read:hover, .button-read:focus {
+  color: #cc1e1e; }
+
+.s_about {
+  background-color: #FAFAFA; }
+  .s_about p {
+    color: #222; }
+
+.person-caption {
+  background-color: rgba(0, 0, 0, 0.6); }
+  .person-caption h3,
+  .person-caption p {
+    color: #FAFAFA; }
+
+.personal-soc a {
+  color: #fff; }
+  .personal-soc a:hover {
+    color: #ed1c23; }
+
+.s_stuff {
+  background-color: rgba(0, 0, 0, 0.6); }
+  .s_stuff .s_caption h2 {
+    color: #FAFAFA;
+    line-height: 1; }
+
+.gray-color {
+  color: #888; }
+
+.subscription-item {
+  border: 1px solid #7c7c7c;
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 3px 2px #7c7c7c; }
+  .subscription-item:hover {
+    box-shadow: 0px 0px 3px 2px #7c7c7c, 2px 2px 3px 1px #ed1c23; }
+
+.s_contacts {
+  background-color: #FAFAFA; }
+
+.contact-box i {
+  color: #ed1c23; }
+
+.get-in-toch {
+  color: #fff; }
+
+.dark-bg {
+  background-color: #1f1f1f; }
+
+.get-in-toch-form input,
+.get-in-toch-form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #FFF; }
+.get-in-toch-form .submit {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent; }
+  .get-in-toch-form .submit:hover {
+    color: #7878fb;
+    border: 1px solid #7878fb; }
+
+.shop-item {
+  background-color: #fff; }
+  .shop-item:hover {
+    box-shadow: 0px 0px 3px 2px #7c7c7c, 2px 2px 3px 1px #ed1c23; }
+  .shop-item .price p {
+    color: #000; }
+  .shop-item a.add-cart {
+    color: #888;
+    border: 1px solid #eaeceb; }
+    .shop-item a.add-cart:hover {
+      text-decoration: none;
+      color: #000; }
+
+.prev a,
+.next a {
+  color: #888; }
+  .prev a:hover,
+  .next a:hover {
+    color: #ed1c23;
+    text-shadow: 1px 1px 5px #7c7c7c; }
+
+.inactive a {
+  color: #eaeceb; }
+  .inactive a:hover {
+    text-shadow: none;
+    color: #eaeceb; }
+
+.s_bmi {
+  background-color: rgba(237, 28, 35, 0.6); }
+  .s_bmi .s_caption h2 {
+    color: #fff; }
+  .s_bmi .s_caption a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease; }
+    .s_bmi .s_caption a:hover {
+      color: #222;
+      letter-spacing: 4px; }
+  .s_bmi select,
+  .s_bmi input {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff; }
+  .s_bmi select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    .s_bmi select option {
+      background-color: #ed1c23;
+      color: #fff; }
+      .s_bmi select option:hover {
+        background-color: #fff; }
+      .s_bmi select option:focus, .s_bmi select option:active {
+        background-color: #fff; }
+  .s_bmi button {
+    background-color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    color: #fff; }
+
+.result,
+#result {
+  color: #fff; }
+
+.main-footer {
+  background-color: #1f1f1f;
+  color: #888; }
+  .main-footer a {
+    color: #888; }
+  .main-footer h2,
+  .main-footer h3 {
+    color: #fff; }
+  .main-footer .contact-box h4 {
+    color: #888; }
+
+.footer-menu a:hover {
+  color: #fff; }
+
+/*# sourceMappingURL=red.css.map */
