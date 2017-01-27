@@ -10,13 +10,18 @@ $(document).ready(function() {
 	$("a[href*='#']").mPageScroll2id();
 
 	function heightDetect(){
+		//NOT INDEX PAGE
+		if(!/index/.test(window.location.href)){
+		// console.log($(location).attr('href'));
+		$('.hero').addClass('small');
+		}else{
 		$('.hero').css('height', $(window).height());
-		// $('.main-header').css('margin-bottom', '-'+($('.main-header').height()));
 		$('.slider').css('height', $(window).height());
+		}
 	}
 	heightDetect();
 	$(window).resize(function() {
-		heightDetect();
+		heightDetect();	
 	});
 	
 	//TOP MENU + Mobile menu
@@ -127,14 +132,10 @@ function slide (sel, q){
 		}
 	});
 }
-//NOT INDEX PAGE
-if(!/index/.test(window.location.href)){
-// console.log($(location).attr('href'));
-
-}
 
 
-//magnific popup  GALLERY============
+
+//=====magnific popup  GALLERY============
 $('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',
