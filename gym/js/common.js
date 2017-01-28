@@ -169,4 +169,7 @@ $('.popup-gallery').magnificPopup({
 			}
 		}
 	});
+// JQ BOOTSTRAP VALIDATION
+
+$("get-in-toch form input, get-in-toch form textarea").jqBootstrapValidation();
 });
