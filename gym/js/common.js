@@ -11,7 +11,8 @@ $(document).ready(function() {
 
 	function heightDetect(){
 		//NOT INDEX PAGE
-		if(!/index/.test(window.location.href)){
+		// if(!/index/.test(window.location.href)){
+		if(!($('#page').hasClass('indexPage'))){
 		// console.log($(location).attr('href'));
 		$('.hero').addClass('small');
 		}else{
