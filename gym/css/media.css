@@ -50,26 +50,32 @@
 .s_contacts img {
 	display: none;
 }
-.dark-bg{
-	padding-left: 15px;
-	padding-bottom: 45px;
-}
+
 .get-in-toch form{
 	padding-left: 9%;
 }
 .s_shop .s_caption h2{
 	line-height: 1;
 }
+.bmi-form input{
+	width: 15%;
+}
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+.dark-bg{
+	padding: 0 0 45px;
+}
 .slide-text h1{
 	font-size: 6em;
 }
 .s_contacts h3,
-.contact-box {
+.contact-box,
+.main-footer h3,
+.main-footer .col-sm-4,
+.main-footer .col-xs-4 {
 	text-align: center;
 }
 .contact-box{
@@ -83,10 +89,44 @@
 	font-size: 1em;
 	line-height: 1.2;
 }
+/*===========bmi============*/
+.s_bmi{
+	padding-bottom: 0;
+}
+.bmi-form{
+	display: block;
+}
+.s_bmi input, .s_bmi button{
+	display: block;
+	max-width: 100%;
+	width: 70%;
+	margin: 10px auto;
+}
+.s_bmi .s_caption{
+	text-align: center;
+}
+.result{
+	display: none;
+}
+#result{
+	position: relative;
+	display: block;
+	top: 0;
+	vertical-align: baseline;
+	text-align: center;
+	line-height: 1.1;
+}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+.main-footer .partners,
+.footer-nav{
+	display: none;
+}
+.footer-contacts{
+	width: 100%;
+}
 .contacts{
 	display: none;
 }

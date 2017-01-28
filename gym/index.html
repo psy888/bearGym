@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<!-- <link rel="stylesheet" href="css/animate.min.css" /> -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="libs/magnificPopup/magnific-popup.css">
 	<!-- Custom stylesheets -->
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
@@ -81,7 +82,7 @@
 								<div class='slide-text'>
 								<h1>Прокачай себя!</h1>
 								<p>Начни заниматься собой <span class='main-color'>уже сегодня.</span></p>
-								<a href='#subscription' class="button">Узнать больше</a>
+								<a href='#subscription' class="button-main">Узнать больше</a>
 								</div>
 							</div>
 						</div>
@@ -569,7 +570,8 @@
 						<div class="price">
 						<p>5 грн</p>
 						</div>
-						<a href="#" class='add-cart'>в корзину</a>
+						<a href="#" class='add-cart'
+						>в корзину</a>
 					</div>
 				</div>
 			</div>
@@ -630,8 +632,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12">
-				<form>
+			<div class="col-md-8 col-sm-8">
+				<form class='bmi-form'>
 					<!-- <select name="gender" id="gender" placeholder='пол'>
 						<option value="0" disabled selected>пол</option>
 						<option value="m">Мужской</option>
@@ -641,7 +643,10 @@
 					<input type="text" name='height' id='height' placeholder="Рост">
 					<button class='calc'>Расчитать</button> 
 				</form>
-				<p class="result">=</p><p id="result">0</p>
+				</div>
+				<div class="col-md-4 col-sm-4">
+				<!-- <p class="result">=</p> -->
+				<a class='bmi-table' href='img/indeks-massy-tela.jpg'><p id="result">0</p></a>
 			</div>
 		</div>
 	</div>
@@ -650,7 +655,7 @@
 <footer class="main-footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-12 col-xs-12 footer-about">
 				<div class="brand">
 						<a href="#" class="brand-logo">
 							<img src="img/header2-min.png" alt="Logo Bear">
@@ -667,7 +672,7 @@
 						</div>
 					</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-4 col-xs-4 footer-nav">
 				<h3>Навигация</h3>
 				<nav class="footer-menu">
 						<ul class='nav'>
@@ -681,15 +686,15 @@
 						</ul>
 					</nav>
 			</div>
-			<div class="col-md-3 partners">
-			<h3>Партнеры</h3>
-			<a href="#">
-				<img src="img/sport-factor.png" alt="alt">
-			</a>
+			<div class="col-md-3 col-sm-4 col-xs-4 partners">
+				<h3>Партнеры</h3>
+				<a href="#">
+					<img src="img/sport-factor.png" alt="alt">
+				</a>
 			</div>
-			<div class="col-md-3">
-			<h3>Адресс</h3>
-			<div class="contact-box">
+			<div class="col-md-3 col-sm-4 col-xs-4 footer-contacts">
+				<h3>Адресс</h3>
+				<div class="contact-box">
 					<i class="fa fa-map-marker"></i>
 					<h4>Адрес:</h4>
 					<p>г.Запорожье, ул. Александровская, 8</p>

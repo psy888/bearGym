@@ -74,7 +74,7 @@ h6
 		font-weight: 400
 .slider
 	// background-color: rgba($main_color,.4)
-.button
+.button-main
 	background-color: $color_dark
 	color: $bg_light
 	&:hover,
@@ -256,4 +256,23 @@ h6
 .footer-menu
 	a:hover
 		color: $slide_caption
-	
+//======WOOCOMMERCE=============
+.products
+	a:hover
+		text-decoration: none
+	li
+		background-color: #FFF
+		border: 1px solid #eaeceb
+		&:hover
+			box-shadow: 0px 0px 3px 2px $grey-text, 2px 2px 3px 1px $color
+		h3
+			color: #888
+	.price
+		color: #000
+
+	.add_to_cart_button
+		color: #888
+		border: 1px solid #eaeceb
+		&:hover
+			text-decoration: none
+			color: #000

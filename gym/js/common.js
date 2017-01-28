@@ -63,7 +63,7 @@ $(document).ready(function() {
 	$('.calc').click(function(event){
 		event.preventDefault();
 		var h;
-		// var gender = $('#gender').val();
+		var result = $('#result');
 		var w = $('#weight').val();
 		var height = $('#height').val();
 		if(height > 60){
@@ -73,7 +73,20 @@ $(document).ready(function() {
 		}
 		var bmi = w / Math.pow(h, 2);
 		if (bmi){
-			$('#result').html(bmi.toFixed(1));
+			$(result).html(bmi.toFixed(1));
+			if(bmi>40){
+				$(result).css('color', 'red');
+			}else if(bmi>35){
+				$(result).css('color', 'orange');
+			}else if(bmi>30){
+				$(result).css('color', 'yellow');
+			}else if(bmi>25){
+				$(result).css('color', 'lightyellow');
+			}else if(bmi>18.5){
+				$(result).css('color', 'green');
+			}else if(bmi<18.5){
+				$(result).css('color', 'lightblue');
+			}
 		}else{
 			return;
 		}
@@ -136,6 +149,9 @@ function slide (sel, q){
 
 
 //=====magnific popup  GALLERY============
+$('.bmi-table').magnificPopup({
+  type: 'image'
+});
 $('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',
